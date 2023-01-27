@@ -1,12 +1,8 @@
 import "./App.css";
 import React from "react";
-import { useState, useEffect } from "react";
-import {
-  GoogleAuthProvider,
-  signInWithPopup,
-  onAuthStateChanged,
-} from "firebase/auth";
-import { auth, db } from "./firebase";
+
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth, db } from "./Firebase";
 import { setDoc, doc, collection } from "firebase/firestore";
 import { useCollection } from "react-firebase-hooks/firestore";
 
